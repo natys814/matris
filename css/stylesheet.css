@@ -1,0 +1,91 @@
+.titulo{
+		margin-left: 3%;
+	}
+#main{
+		float:left;
+		width:80%; 
+		background-color:FFA500;
+		text-align:center;
+	}
+#left{
+		float: left;
+		width: 10%;
+		height: 20%;
+	}
+#rigth{
+		float: left;
+		width: 10%;
+		height: 20%;
+	}
+.contenedor{
+		padding-bottom:10px;
+	}
+.contenedor2{
+		padding-top:10px;
+		padding-bottom:10px;
+	}
+.matriz{
+		float:left;
+		text-align:center;
+		width: 50%;
+		padding-top: 10px;
+	}
+.matrizA{
+		background-color: 66FF66;
+	}
+.matrizB{
+		background-color: 20B2AA;
+	}
+.matrices{
+		width: 100%;
+		border: none;
+		border-collapse: collapse;
+	}
+.matrices td{
+		text-align: center !important;
+		width: 50%;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+#matrices{
+		background-color: #FE2E2E;
+	}
+.limpiar{
+		clear: both;
+	}
+.operaciones{
+		width: 100%;
+		border: none;
+		border-collapse: collapse;
+		text-align:center;
+	}
+.operaciones td{
+		
+		padding-top: 10px;
+		
+	}
+.resultados td{
+		width: 33%
+	}
+.mzSuma{
+		padding-bottom: 10px;
+		background-color:#F3F781;
+	}
+.mzResta{
+		padding-bottom: 10px;
+		background-color:#A4A4A4;
+	}
+.mzEscalarB{
+		padding-bottom: 10px;
+		background-color:#F78181;
+	}
+.mzEscalarA{
+		padding-bottom: 10px;
+		background-color:#2ECCFA;
+	}
+#matrizA2,#matrizB2{
+		padding-bottom: 10px;
+	}
+.main{
+		background-color: #FE2E2E;
+	}

@@ -1,0 +1,183 @@
+<html>
+	<head>
+		<script src="./src/Vector.js"></script>
+		<script src="./src/main.js"></script>
+		<link rel="stylesheet" href="css/stylesheet.css">
+		<title>Operaciones con Matrices y Vectores</title>
+	</head>
+	<body>
+		<h1 style="text-align: center;">MATRICES</h1>
+		<h1 class="titulo">Multiplicaci&oacute;n de dos matrices</h1>
+		<div id="left"></div>
+		<div id="main">
+			<div class="contenedor">
+				<div class="matriz">
+					<b>Dimensiones matriz A</b> <br/>
+					Filas: <input type="text" size="4" id="flsAmult">
+					Columnas: <input type="text" size="4" id="colAmult">
+				</div>
+				<div class="matriz">
+					<b>Dimensiones matriz B</b><br/>
+					Filas: <input type="text" size="4" id="flsBmult">
+					Columnas: <input type="text" size="4" id="colBmult">
+				</div>
+				<input type="button" value="CREAR MATRICES" onclick="Comprobar()" id="crear" enabled="enabled" />
+				<input type="button" value="LIMPIAR" onclick="Limpiar ()" id="limpiar" disabled="disabled"/>
+			</div>
+			<div id="matrices" style="display: none">
+				<table class="matrices">
+					<tr>
+						<td class="matrizA">
+							<div id="matrizA" >
+								<b>Matriz A</b>
+							</div>
+						</td>
+						<td class="matrizB">
+							<div id="matrizB" >
+								<b>Matriz B</b>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<input type="button" value="MULTIPLICAR" onclick="Multiplicar()"/>
+							<div id="matrizRmult">
+								<b>Matriz Resultante</b>
+								<br/>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="rigth"> </div>
+		
+		<h1 class="titulo limpiar">Suma, Resta, Multiplicaci&oacute;n por un escalar en matrices</h1>
+		<div id="left"></div>
+		<div id="main">
+			<div class="contenedor2" >
+				<div style="padding-bottom: 10px;">
+					<b>Dimensiones de la Matriz</b> <br/>
+					Filas: <input type="text" size="4" id="filas">
+					Columnas: <input type="text" size="4" id="columnas">
+					Escalar: <input type="text" size="4" id="escalar"> <br/>
+				</div>
+				<input type="button" value="CREAR MATRICES" onclick="Operaciones()" id="crear2" enabled="enabled"/>
+				<input type="button" value="LIMPIAR" onclick="Limpiar2 ()" id="limpiar2" disabled="disabled"/>
+			</div>
+			<div id="matrices2" style="display: none">
+				<table class="matrices">
+					<tr>
+						<td class="matrizA">
+							<div id="matrizA2">
+								<b>Matriz A</b>
+							</div>
+						</td>
+						<td class="matrizB">
+							<div id="matrizB2">
+								<b>Matriz B</b>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" class="main">
+							<input type="button" value="CALCULAR" onclick="Calcular()"/>
+						</td>
+					</tr>
+					<tr>
+						<td class="mzSuma">
+							<div id="mzSuma">
+								<b>Matriz Resultante Suma</b>
+							</div>
+						</td>
+						<td class="mzResta">
+							<div id="mzResta">
+								<b>Matriz Resultante Resta</b>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="mzEscalarA">
+							<div id="mzEscalarA">
+								<b>Matriz A Resultante Multiplicaci&oacute;n Escalar</b>
+							</div>
+						</td>
+						<td class="mzEscalarB">
+							<div id="mzEscalarB">
+								<b>Matriz B Resultante Multiplicaci&oacute;n Escalar</b>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="rigth"> </div>
+		
+		<h1 style="text-align: center;">VECTORES</h1>
+		<h1 class="titulo limpiar">Suma, Resta, Multiplicaci&oacute;n por un escalar en vectores</h1>
+		<div id="left"></div>
+		<div id="main">
+			<div class="contenedor">
+				<div class=" matriz" style="padding-bottom: 10px;">
+					<b>Datos Vector A</b></br>
+					X: <input type="text" id="xA" size="4" />
+					Y: <input type="text" id="yA" size="4" />
+					Z: <input type="text" id="zA" size="4" />
+				</div>
+				<div class=" matriz" style="padding-bottom: 10px;">
+					<b>Datos Vector B</b></br>
+					X: <input type="text" id="xB" size="4" />
+					Y: <input type="text" id="yB" size="4" />
+					Z: <input type="text" id="zB" size="4" />
+				</div>
+				<div class="limpiar" style="padding-top: 10px;">
+					Escalar: <input type="text" id="vrEscalar" size="4" /> 
+					<input type="button" value="OPERAR" onclick="Operar()" id="crear3"/>
+					<input type="button" value="LIMPIAR" onclick="Limpiar3()" id="limpiar3" disabled="disabled"/>
+				</div>
+			</div>
+			<div id="vectores" style="display: none">
+				<table class="matrices main">
+					<tr>
+						<td class="matrizA">
+							<div id="vrSuma">
+								<b>Vector Resultante Suma</b>
+							</div>
+						</td>
+						<td class="matrizB">
+							<div id="vrResta">
+								<b>Vector Resultante Resta</b>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="mzSuma">
+							<div id="vrEscalarA">
+								<b>Vector A Resultante Multiplicaci&oacute;n por escalar</b>
+							</div>
+						</td>
+						<td class="mzResta">
+							<div id="vrEscalarB">
+								<b>Vector B Resultante Multiplicaci&oacute;n por escalar</b>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="mzEscalarA">
+							<div id="vrPtoCruz">
+								<b>Vector Resultante Producto Cruz</b>
+							</div>
+						</td>
+						<td class="mzEscalarB">
+							<div id="vrPtoEscalar">
+								<b>Resultante Producto Escalar</b>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="rigth"> </div>
+	</body>
+</html>
+
